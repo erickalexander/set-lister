@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Setlister</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src = 'src/playlist.js'></script>
+    <script src = 'src/song.js'></script>
+    <script src = 'src/adapter.js'></script>
+    <script src = 'src/index.js'></script>
+
+    </script>
+  </head>
+  <body>
+    <!-- BEGINNING OF NAVBAR -->
+    <nav class="navbar" >
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#" style="color: #00ac77; font-size: 30px">Setlister</a>
+        </div>
+      </div>
+    </nav>
+    <hr>
+    <br>
+    <!-- END OF NAV BAR -->
+    <div class="container">
+      <div class="row">
+
+      <div class="col-sm-3" id="playlist-bar">
+        <div id="single-playlist"></div>
+      </div>
+
+      <div class="col-sm-6"  style="padding-top: 50px">
+        <!-- Playlist Creator -->
+        <div class = "layer1" id="playlist">
+          <h1 class = "text-center">Create Playlist</h1>
+          <form id="playlist-form" action="#" method="post">
+            <label>Name:</label>
+            <input id="playlist-name" class="form-control" type="text" /> <br />
+            <label>Select Songs</label>
+            <div id="songs-cb"></div>
+            <button class="btn-success" id="edit-submit">Submit</button>
+          </form>
+        </div>
+
+
+        <!-- Song Creator -->
+        <div class = "layer2" id="song">
+          <h1 class = "text-center">Add Songs</h1>
+          <form id="song-form" action="#" method="post">
+            <label>Title:</label>
+            <input id="song-title" class="form-control" type="text" /> <br />
+            <label>Artist:</label>
+            <input  id="song-artist" class="form-control" type="text"/><br />
+            <label>Genre:</label>
+            <input  id="song-genre" class="form-control" type="text"/><br />
+            <button class="btn-success" id="edit-submit">Submit</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="col-sm-3" id="song-bar">
+
+      </div>
+      </div>
+    </div>
+  </body>
+
+</html>

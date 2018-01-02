@@ -1,0 +1,32 @@
+#main {
+  width: 250px;
+  padding-left: 50px;
+  padding-bottom: 20px
+}
+#h1-main {
+  margin: 0;
+  display: inline-block;
+}
+#create-playlist{
+  float: right;
+}
+#create-song{
+  float: right;
+}
+
+.layer1 {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding-right: 25px;
+
+}
+
+.layer2 {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    padding-right: 25px;
+
+
+}
