@@ -17,6 +17,8 @@ class Api::V1::SongsController < ApplicationController
   end
 
   def destroy
+    #remove song from playlist
+    byebug
     songId = @song.id
     @song.destroy
     render json: {message:"Zap! Song deleted", songId:songId}
