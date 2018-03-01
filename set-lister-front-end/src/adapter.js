@@ -12,7 +12,7 @@ class Adapter{
   static displaySongs(){
     let songBar = document.querySelector('#song-bar')
     songBar.style = 'border: 5px'
-    songBar.innerHTML = `<div id="main"> <h1 id ='h1-main'>Songs</h1> <button id="create-song" style="background-color: #00ac77">+</button> </div>`
+    // songBar.innerHTML = `<div id="main"> <h1 id ='h1-main'>Songs</h1> <button id="create-song" style="background-color: #00ac77">+</button> </div>`
         Song.all.forEach(function(song){
           songBar.innerHTML += `
             <div id="${song.id}" style="border-style: solid; border-width: 2px; padding: 20px">
@@ -41,7 +41,7 @@ class Adapter{
     let playlistBar = document.querySelector('#playlist-bar')
     let singleP = document.querySelector('#single-playlist')
     singleP.style = "border-style: solid; border-width: 2px; padding: 20px"
-    playlistBar.innerHTML = `<div id="main"> <h1 id ='h1-main'>Playlists</h1> <button id="create-playlist" style="background-color: #00ac77">+</button> </div>`
+    // playlistBar.innerHTML = `<div id="main"> <h1 id ='h1-main'>Playlists</h1> <button id="create-playlist" style="background-color: #00ac77">+</button> </div>`
         Playlist.all.forEach(function(playlist){
           let newDiv = document.createElement("DIV")
           newDiv.innerHTML += `
